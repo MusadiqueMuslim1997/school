@@ -18,7 +18,7 @@ document.getElementById("show").addEventListener("change", function() {
     if(passwordField ===""||email===""){
       Swal.fire({
         icon: "error",
-        text: "Please enter these input field!",
+        text: "Please fill input field!",
       });
     }
     else if(passwordField.length<6){
