@@ -30,10 +30,14 @@ document.getElementById("show").addEventListener("change", function() {
     }
     else{
       Swal.fire({
-        title: "congratulation!",
-        text: "You have login successfully!",
+        title: "Congratulations!",
+        text: "You have log in successfully!",
         icon: "success"
-      });
+    }).then((result) => {
+        if (result.isConfirmed) {
+            window.location = "home.html";  // Redirect after OK button click
+        }
+    });
     }
 
   }
