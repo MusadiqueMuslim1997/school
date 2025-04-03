@@ -12,7 +12,12 @@ let register = () => {
            
             const user = userCredential.user;
             console.log("User Created:", user);
+            Swal.fire({
+                title: "Congratulation!",
+                text:"Your account has been successfully created",
+                icon: "success",
             
+              });
             window.location = "index.html"; 
         })
         .catch((error) => {
@@ -20,9 +25,14 @@ let register = () => {
             const errorMessage = error.message;
             console.error("Error Code:", errorCode);
             console.error("Error Message:", errorMessage);
-
+            Swal.fire({
+                icon: "error",
+                title: "Error...",
+                text: `${errorMessage}`,
+               
+              });
            
-            alert(`Error: ${errorMessage}`);
+            // alert(`Error: ${errorMessage}`);
         });
     console.log(email.value);
     
