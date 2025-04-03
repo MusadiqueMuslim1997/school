@@ -22,19 +22,22 @@
             <div class="head">school login</div>
           <div class="email" id="email">
             <i class="fa-solid fa-envelope"></i>
-            <input type="email" placeholder="Email or CNIC" id="inp"/>
+            <input type="email" placeholder="Email or CNIC" id="logemail"/>
           </div>
           <div class="email" id="email">
             <i class="fa-solid fa-lock"></i>
-            <input type="password" placeholder="Password" id="password"/>
+            <input class="pass" type="password" placeholder="Password" id="logpassword"/>
           </div>
           <div class="email show">
           <label for="show">
             <input type="checkbox" id="show">Show Password
         </div>
           </label>
-          <button onclick="validInput()" class="email btn" id="email">
+          <button class="email btn" id="loginbtn">
             log in
+          </button>
+          <button onclick="signup()" class="email btn" id="signup_new">
+            Create new account
           </button>
           <div class="footer">developer: musadique muslim</div>
 
@@ -43,7 +46,8 @@
       </div>
     
     </section>
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    
     <script src="app.js"></script>
+    <script type="module" src="login.js"></script>
   </body>
 </html>

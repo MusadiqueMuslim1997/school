@@ -1,16 +1,27 @@
 document.getElementById("show").addEventListener("change", function() {
-    let passwordField = document.getElementById("password");
+    let passwordField = document.getElementById("logpassword");
     
-    // Check if the checkbox is checked
+  
     if (this.checked) {
-      // If checked, set the type to 'text' to show the password
+      
       passwordField.type = "text";
     } else {
-      // If unchecked, set the type back to 'password' to hide it
+     
       passwordField.type = "password";
     }
   });
-
+  document.getElementById("show").addEventListener("change", function() {
+    let passwordField = document.getElementById("signpassword");
+    
+   
+    if (this.checked) {
+    
+      passwordField.type = "text";
+    } else {
+      
+      passwordField.type = "password";
+    }
+  });
   
   function validInput(){
     let passwordField = document.getElementById("password").value;
@@ -35,9 +46,12 @@ document.getElementById("show").addEventListener("change", function() {
         icon: "success"
     }).then((result) => {
         if (result.isConfirmed) {
-            window.location = "home.html";  // Redirect after OK button click
+            window.location = "home.html";  
         }
     });
     }
 
+  }
+  function signup(){
+    window.location = "signup.html"
   }
