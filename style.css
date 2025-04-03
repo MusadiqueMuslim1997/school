@@ -202,10 +202,15 @@
       height: 30px;
   }
   .footer,.btn,.email,.show{
-      font-size: 0.8surgerem;
+      font-size: 0.8rem;
   }
   .footer{
       margin-bottom: 10px;
       font-size: 0.8rem;
+  }
+  .btn2{
+    font-size: 0.8rem;
+    
+    text-align: center;
   }
   }
