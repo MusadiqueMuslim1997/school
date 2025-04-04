@@ -179,6 +179,9 @@
       .logo,.form{
           width: 100%;
       }
+      .logo > img{
+        width: 60%;
+      }
   }
   @media screen and (max-width:550px){
       body{
