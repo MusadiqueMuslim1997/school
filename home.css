@@ -26,13 +26,13 @@ header {
   object-fit: cover;
 }
 .logo > img{
-    width: 150px;
+    width: 60px;
 }
 .location {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+  gap: 5px;
   /* background-color: beige; */
 }
 .location-icn {
@@ -76,7 +76,7 @@ header {
     padding: 30px;
   }
   .logo > img {
-    width: 130px;
+    width: 50px;
   }
   .icon {
     font-size: 1.5rem;
@@ -92,7 +92,7 @@ header {
     font-size: 1.2rem;
   }
   .logo > img {
-    width: 80px;
+    width: 45px;
   }
   .location-icn {
     font-size: 1.1rem;
