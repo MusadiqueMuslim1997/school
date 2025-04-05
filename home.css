@@ -94,6 +94,7 @@ header {
 }
 .hero-1 {
   width: 50%;
+  /* padding-bottom: 20px; */
   display: flex;
   align-items: center;
   /* background-color: antiquewhite; */
@@ -101,6 +102,7 @@ header {
   gap: 15px;
 }
 .hero-2 {
+
   width: 50%;
   display: flex;
   align-items: center;
@@ -111,6 +113,7 @@ header {
   width: 100%;
 }
 .hero1-box {
+  
   width: 80%;
   border-radius: 20px;
   display: flex;
@@ -250,6 +253,36 @@ header {
 .developer:hover{
 background-color: #f3d2bf;
 }
+
+.mains{
+  background-color: #ffffff;
+}
+
+.main-1{
+  width: 100%;
+  padding: 40px 80px;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+  /* background-color: #f17728; */
+}
+.card{
+  width: 220px;
+  border-radius: 20px;
+  background-color: #ffffff;
+  object-fit: cover;
+  transition: 1s;
+}
+.card>img{
+  width: 100%;
+  cursor: pointer;
+}
+.card:hover{
+    transform: scale(1.1);
+    transition: 1s ease-in-out;
+}
 @media screen and (min-width:1250px){
   .main{
     width: 1200px;
@@ -292,6 +325,15 @@ background-color: #f3d2bf;
     padding-left: 30px;
     padding: 30px;
   }
+  .main-1{
+    justify-content: space-around;
+  }
+  .card{
+    width: 200px;
+  }
+  .main-1{
+    padding: 30px;
+  }
 }
 @media screen and (max-width: 550px) {
   header {
@@ -322,5 +364,8 @@ background-color: #f3d2bf;
     width: 40px;
     height: 40px;
     font-size: 1.2rem;
+  }
+  .card{
+    width: 250px;
   }
 }
