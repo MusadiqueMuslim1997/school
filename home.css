@@ -18,6 +18,13 @@ header {
   top: 0;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
+.main-hero{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffb30e;
+}
 .logo {
   display: flex;
   align-items: center;
@@ -110,7 +117,7 @@ header {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 5px;
+  gap: 10px;
   background-color: white;
   padding: 20px;
 }
@@ -179,7 +186,97 @@ header {
   transition: 1s;
   text-transform: capitalize;
 }
-
+.cont{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.cont1{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #ffffff;
+  background-color: #f17728;
+  font-weight: bold;
+  text-transform: capitalize;
+  border-radius: 10px;
+  padding: 10px;
+}
+.cont2{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 10px;
+}
+.cont2-icons>a{
+ width: 60px;
+ height: 60px;
+  border-radius: 50%;
+  background-color: #f8e2d6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+  color: #f17728;
+  font-size: 1.5rem;
+  border: 2px solid #f3d2bf;
+  text-decoration: none;
+}
+.cont2-icons>a:hover{
+  background-color: #f3d2bf;
+}
+.developer{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: bolder;
+  color: #f17728;
+  border: 2px solid #f3d2bf;
+  background-color: #f8e2d6;
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.developer:hover{
+background-color: #f3d2bf;
+}
+@media screen and (min-width:1250px){
+  .main{
+    width: 1200px;
+  }
+}
+@media screen and (max-width:1035px){
+  .hero{
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  .hero-1{
+    width: 100%;
+  }.hero-2{
+    width: 100%;
+    justify-content: center;
+  }
+  .hero1-head,.hero1-content{
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+  }
+  .hero1-box{
+    width: 100%;
+  }
+}
 @media screen and (max-width: 860px) {
   header {
     gap: 10px;
@@ -190,6 +287,10 @@ header {
   }
   .icon {
     font-size: 1.5rem;
+  }
+  .hero{
+    padding-left: 30px;
+    padding: 30px;
   }
 }
 @media screen and (max-width: 550px) {
@@ -212,5 +313,14 @@ header {
   }
   .location-icn > a > .loc {
     font-size: 0.8rem;
+  }
+  .hero1-first{
+    width: 100%;
+    justify-content: center;
+  }
+  .cont2-icons>a{
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
   }
 }

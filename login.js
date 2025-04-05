@@ -17,12 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
                
                 const user = userCredential.user;
                 console.log("Logged in user:", user); 
-                Swal.fire({
-                    title: "Congratulation!",
-                    text:"You have login successfully",
-                    icon: "success",
-                
-                  });
+             
                 window.location = "home.html"; 
             })
             .catch((error) => {

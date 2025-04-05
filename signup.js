@@ -12,12 +12,7 @@ let register = () => {
            
             const user = userCredential.user;
             console.log("User Created:", user);
-            Swal.fire({
-                title: "Congratulation!",
-                text:"Your account has been successfully created",
-                icon: "success",
-            
-              });
+           
             window.location = "index.html"; 
         })
         .catch((error) => {
