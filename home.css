@@ -18,7 +18,7 @@ header {
   top: 0;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
-.main-hero{
+.main-hero {
   width: 100%;
   display: flex;
   align-items: center;
@@ -70,15 +70,24 @@ header {
   color: silver;
   font-weight: 600;
 }
-.icon {
+
+.signout {
+  padding: 10px;
+  background-color: orange;
   display: flex;
   align-items: center;
-  justify-content: right;
-  font-size: 2rem;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
 }
-.icon > a {
-  text-decoration: none;
-  color: orange;
+.signout:active {
+  background-color: green;
 }
 .hero {
   width: 100%;
@@ -100,11 +109,10 @@ header {
   align-items: center;
   /* background-color: antiquewhite; */
   flex-wrap: wrap;
- 
+
   gap: 15px;
 }
 .hero-2 {
-
   width: 50%;
   display: flex;
   align-items: center;
@@ -115,7 +123,6 @@ header {
   width: 100%;
 }
 .hero1-box {
-  
   width: 80%;
   border-radius: 20px;
   display: flex;
@@ -125,7 +132,6 @@ header {
   gap: 10px;
   background-color: white;
   padding: 20px;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .hero1-head {
   width: 80%;
@@ -192,14 +198,14 @@ header {
   transition: 1s;
   text-transform: capitalize;
 }
-.cont{
+.cont {
   width: 100%;
   display: flex;
   align-items: center;
   gap: 15px;
   flex-wrap: wrap;
 }
-.cont1{
+.cont1 {
   width: 100%;
   display: flex;
   align-items: center;
@@ -213,16 +219,16 @@ header {
   border-radius: 10px;
   padding: 10px;
 }
-.cont2{
+.cont2 {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
   gap: 10px;
 }
-.cont2-icons>a{
- width: 60px;
- height: 60px;
+.cont2-icons > a {
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   background-color: #f8e2d6;
   display: flex;
@@ -235,10 +241,10 @@ header {
   border: 2px solid #f3d2bf;
   text-decoration: none;
 }
-.cont2-icons>a:hover{
+.cont2-icons > a:hover {
   background-color: #f3d2bf;
 }
-.developer{
+.developer {
   width: 100%;
   display: flex;
   align-items: center;
@@ -253,16 +259,15 @@ header {
   border-radius: 10px;
   cursor: pointer;
 }
-.developer:hover{
-background-color: #f3d2bf;
+.developer:hover {
+  background-color: #f3d2bf;
 }
 
-.mains{
+.mains {
   background-color: #ffffff;
-  
 }
 
-.main-1{
+.main-1 {
   width: 100%;
   padding: 40px 80px;
   display: flex;
@@ -272,46 +277,47 @@ background-color: #f3d2bf;
   justify-content: space-between;
   /* background-color: #f17728; */
 }
-.card{
+.card {
   width: 220px;
   border-radius: 20px;
   background-color: #ffffff;
   object-fit: cover;
   transition: 1s;
-  
 }
-.card>img{
+.card > img {
   width: 100%;
   cursor: pointer;
 }
-.card:hover{
-    transform: scale(1.1);
-    transition: 1s ease-in-out;
+.card:hover {
+  transform: scale(1.1);
+  transition: 1s ease-in-out;
 }
-@media screen and (min-width:1250px){
-  .main{
+@media screen and (min-width: 1250px) {
+  .main {
     width: 1200px;
   }
 }
-@media screen and (max-width:1035px){
-  .hero{
+@media screen and (max-width: 1035px) {
+  .hero {
     flex-wrap: wrap;
     flex-direction: column-reverse;
     justify-content: space-around;
     gap: 20px;
   }
-  .hero-1{
+  .hero-1 {
     width: 100%;
-  }.hero-2{
+  }
+  .hero-2 {
     width: 100%;
     justify-content: center;
   }
-  .hero1-head,.hero1-content{
+  .hero1-head,
+  .hero1-content {
     width: 100%;
     justify-content: center;
     text-align: center;
   }
-  .hero1-box{
+  .hero1-box {
     width: 100%;
   }
 }
@@ -326,17 +332,17 @@ background-color: #f3d2bf;
   .icon {
     font-size: 1.5rem;
   }
-  .hero{
+  .hero {
     padding-left: 30px;
     padding: 30px;
   }
-  .main-1{
+  .main-1 {
     justify-content: space-around;
   }
-  .card{
+  .card {
     width: 200px;
   }
-  .main-1{
+  .main-1 {
     padding: 30px;
   }
 }
@@ -346,8 +352,10 @@ background-color: #f3d2bf;
     padding: 30px;
   }
 
-  .icon {
-    font-size: 1.4rem;
+  .signout{
+    padding: 6px;
+    font-size: 0.6rem;
+    border-radius: 5px;
   }
   .logo > img {
     width: 50px;
@@ -361,16 +369,16 @@ background-color: #f3d2bf;
   .location-icn > a > .loc {
     font-size: 0.8rem;
   }
-  .hero1-first{
+  .hero1-first {
     width: 100%;
     justify-content: center;
   }
-  .cont2-icons>a{
+  .cont2-icons > a {
     width: 40px;
     height: 40px;
     font-size: 1.2rem;
   }
-  .card{
+  .card {
     width: 250px;
   }
 }
