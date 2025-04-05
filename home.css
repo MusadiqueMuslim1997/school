@@ -19,20 +19,18 @@ header {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .logo {
-
   display: flex;
   align-items: center;
   justify-content: left;
   object-fit: cover;
 }
-.logo > img{
-    width: 60px;
-    transition: 2s;
-  }
-  .logo > img:hover{
-    transform: rotate(360deg);
-
-  }
+.logo > img {
+  width: 60px;
+  transition: 2s;
+}
+.logo > img:hover {
+  transform: rotate(360deg);
+}
 .location {
   display: flex;
   align-items: center;
@@ -75,6 +73,113 @@ header {
   text-decoration: none;
   color: orange;
 }
+.hero {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  background-color: #ffb30e;
+  margin-top: 80px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-top: 40px;
+}
+.hero-1 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  /* background-color: antiquewhite; */
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.hero-2 {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+}
+.hero-2 > img {
+  width: 100%;
+}
+.hero1-box {
+  width: 80%;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5px;
+  background-color: white;
+  padding: 20px;
+}
+.hero1-head {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #ffffff;
+  text-transform: capitalize;
+}
+.hero-content {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  text-transform: capitalize;
+}
+.hero1-first {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.hero1-second {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.deliver {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  background-color: #f8e2d6;
+  color: #f17728;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 1s;
+  text-transform: capitalize;
+}
+.deliver:hover,
+.pickup:hover {
+  transform: scale3d(1.05, 1.05, 1);
+  transition: transform 1s ease;
+}
+.pickup {
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  background-color: #e4e4e4;
+  color: gray;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 1s;
+  text-transform: capitalize;
+}
+
 @media screen and (max-width: 860px) {
   header {
     gap: 10px;
@@ -94,10 +199,10 @@ header {
   }
 
   .icon {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
   }
   .logo > img {
-    width: 45px;
+    width: 50px;
   }
   .location-icn {
     font-size: 1.1rem;
