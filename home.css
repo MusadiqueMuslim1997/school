@@ -96,9 +96,11 @@ header {
   width: 50%;
   /* padding-bottom: 20px; */
   display: flex;
+  justify-content: center;
   align-items: center;
   /* background-color: antiquewhite; */
   flex-wrap: wrap;
+ 
   gap: 15px;
 }
 .hero-2 {
@@ -123,6 +125,7 @@ header {
   gap: 10px;
   background-color: white;
   padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .hero1-head {
   width: 80%;
@@ -256,6 +259,7 @@ background-color: #f3d2bf;
 
 .mains{
   background-color: #ffffff;
+  
 }
 
 .main-1{
@@ -274,6 +278,7 @@ background-color: #f3d2bf;
   background-color: #ffffff;
   object-fit: cover;
   transition: 1s;
+  
 }
 .card>img{
   width: 100%;
