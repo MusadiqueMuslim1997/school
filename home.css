@@ -292,6 +292,7 @@ header {
   transform: scale(1.1);
   transition: 1s ease-in-out;
 }
+
 .hero2-background {
   background: linear-gradient(to bottom, #fdedca, #ffffff);
 }
@@ -365,6 +366,8 @@ header {
   font-size: 1rem;
   color: gray;
 }
+
+
 @media screen and (min-width: 1250px) {
   .main {
     width: 1200px;
@@ -424,6 +427,7 @@ header {
   }
   .main-1 {
     justify-content: space-around;
+    gap: 20px;
   }
   .card {
     width: 200px;
