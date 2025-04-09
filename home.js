@@ -66,8 +66,10 @@ let iconArray = [
   {
     icon: `<i class="fa-solid fa-comment-dollar"></i>`,
     icon_head: "Pay advanced",
-    icon_content: "It's quick, safe, and simple. Select several methods of payment",
-  },{
+    icon_content:
+      "It's quick, safe, and simple. Select several methods of payment",
+  },
+  {
     icon: `<i class="fa-solid fa-medal"></i>`,
     icon_head: "Enjoy meals",
     icon_content: "Food is made and delivered directly to your home.",
@@ -83,4 +85,61 @@ iconArray.forEach((element) => {
             </div>
   
   `;
+});
+let hero_3_card_sec = document.getElementById("hero3-card-sec");
+let herro3Array = [
+  {
+    image: "./images/1.png",
+  },
+  {
+    image: "./images/2.png",
+  },
+  {
+    image: "./images/3.png",
+  },
+  {
+    image: "./images/4.png",
+  },
+  {
+    image: "./images/5.png",
+  },
+];
+
+herro3Array.forEach((element3) => {
+  hero_3_card_sec.innerHTML += `
+ <div class="hero3-card"><img src="${element3.image}" alt=""></div>
+`;
+});
+let hero_4_card_sec = document.getElementById("hero4-card-sec");
+let herro4Array = [
+  {
+    image: "./images/im1.png",
+  },
+  {
+    image: "./images/im2.png",
+  },
+  {
+    image: "./images/im3.png",
+  },
+  {
+    image: "./images/im4.png",
+  },
+  {
+    image: "./images/im5.png",
+  },
+  {
+    image: "./images/im6.png",
+  },
+  {
+    image: "./images/im7.png",
+  },
+  {
+    image: "./images/im8.png",
+  },
+];
+
+herro4Array.forEach((element4) => {
+  hero_4_card_sec.innerHTML += `
+ <div class="card margin"><img src="${element4.image}" alt=""></div>
+`;
 });

@@ -280,7 +280,6 @@ header {
 .card {
   width: 220px;
   border-radius: 20px;
-  background-color: #ffffff;
   object-fit: cover;
   transition: 1s;
 }
@@ -334,7 +333,7 @@ header {
   cursor: pointer;
   transition: 1s;
 }
-.card-icon:hover{
+.card-icon:hover {
   transform: scale(1.1);
   transition: 1s;
 }
@@ -366,11 +365,59 @@ header {
   font-size: 1rem;
   color: gray;
 }
-
-
+.hero3 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px 80px;
+}
+.white {
+  background-color: #ffffff;
+}
+.font-black {
+  color: black;
+  font-size: 2rem;
+  font-weight: bolder;
+  text-transform: capitalize;
+}
+.hero3-card-sec {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.hero3-card {
+  width: 160px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;
+  transition: 1s;
+  cursor: pointer;
+}
+.hero3-card:hover{
+  transform: scale(1.1);
+  transition: 1s;
+}
+.hero3-card > img {
+  width: 100%;
+}
+.margin{
+  margin-top: 20px;
+}
 @media screen and (min-width: 1250px) {
   .main {
     width: 1200px;
+  }
+}
+@media screen and (max-width: 1150px) {
+  .card-icon {
+    width: 160px;
   }
 }
 @media screen and (max-width: 1035px) {
@@ -411,10 +458,21 @@ header {
     gap: 10px;
     padding: 30px;
   }
+  .hero2,
+  .hero3 {
+    padding: 30px;
+  }
+  .hero3-card-sec {
+    justify-content: space-around;
+  }
+  .card-icon,
+  .hero3-card {
+    width: 200px;
+  }
   .logo > img {
     width: 50px;
   }
-  
+
   .icon {
     font-size: 1.5rem;
   }
@@ -422,7 +480,7 @@ header {
     padding-left: 30px;
     padding: 30px;
   }
-  .hero2{
+  .hero2 {
     padding: 30px;
   }
   .main-1 {
@@ -435,7 +493,7 @@ header {
   .main-1 {
     padding: 30px;
   }
-  .card-icon-sec{
+  .card-icon-sec {
     justify-content: space-around;
   }
 }
