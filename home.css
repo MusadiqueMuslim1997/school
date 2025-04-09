@@ -43,6 +43,7 @@ header {
   align-items: center;
   justify-content: center;
   gap: 5px;
+  
   /* background-color: beige; */
 }
 .location-icn {
@@ -109,7 +110,7 @@ header {
   align-items: center;
   /* background-color: antiquewhite; */
   flex-wrap: wrap;
-
+  /* height: 500px; */
   gap: 15px;
 }
 .hero-2 {
